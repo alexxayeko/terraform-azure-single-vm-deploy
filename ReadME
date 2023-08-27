@@ -1,0 +1,26 @@
+++++++++++++++++++++++++++++++++++
+Single vm deployment++++++++++++++
+++++++++++++++++++++++++++++++++++
+
+First your 
+
+>>>>>>>>>  terraform init -upgrade
+
+then
+>>>>>>>>terraform plan -out main.tfplan
+
+then
+>>>>> terraform apply "main.tfplan"
+
+
+------------------------------------------
+
+When you want to update the project 
+
+Use 
+>>>> terraform plan -out main.tfplan
+
+After 
+>>>> terraform apply "main.tfplan"
+
+
